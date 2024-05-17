@@ -1,2 +1,4 @@
 # Capstone-2024
-Capstone project 
+Sari Sarieddine 
+
+This repository is for my Capstone Project
