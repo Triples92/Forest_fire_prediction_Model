@@ -8,7 +8,8 @@ Introduction:
 This project aims to create a model that determines the likelihood of forest fires based on weather projections.
 
 
-The idea behind this that forest fires are becoming more common-place and more dangerous with the warmer weather and milder winters. This goal of this project is to aid communities in better anticipating forest fires, which will help in evacuation and severe weather planning. 
+The idea behind this that forest fires are becoming more common-place and more dangerous with the warmer weather and milder winters. 
+The goal of this project is to aid communities in better anticipating forest fires, which will help in evacuation and severe weather planning. 
 
 
 ---
