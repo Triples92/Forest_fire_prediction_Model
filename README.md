@@ -1,36 +1,69 @@
 # Capstone-2024
 Sari Sarieddine 
 
-This repository is for my Capstone Project
-
-Introduction: 
-
-This project aims to create a model that determines the likelihood of forest fires based on weather projections.
 
 
-The idea behind this that forest fires are becoming more common-place and more dangerous with the warmer weather and milder winters. 
-The goal of this project is to aid communities in better anticipating forest fires, which will help in evacuation and severe weather planning. 
 
 
----
-Below is a map of all the forest fires that occured between 1990-2022. The model will be using the data collected from all the fires shown below, along with weather data from 266 weather stations.
+## Predictive Model for Forest Fire Preparedness
+=========================
 
-![A topographic map of all the forestfires between 1990-2022](image.png)
----
-Files: 
+### Executive Summary
 
-converter.ipynb
+... Why this project:
+        - Forest fires are becoming more commonplace and dangerous
+        - Weather is getting warmer by the year
+        
+... What is the data science opportunity:
+    Anticipating forest fires may help communities be better equipped to handle the risks. 
 
-Description: Responsible for converting .shp files to csv. Exclusively used for the data on forest fires. 
 
-station_filtering.ipyb
+... Key takeaways: Histogram Gradient Boosting has proved to be the best model in predicting occurance of forest fires. Modelling for climate related events has a risk of model drifting in a shorter span than what may be ideal as we are seeing a rapid change in temperatures and weather events. We will have to contineously monitor, measure, and retrain our models to keep up with those changes. 
 
-Description: Responsible for filtering ~8500 weather stations to determine the ideal stations based on lat and long to use for this project. 
 
-weather_downloader.ipynb
 
-Description: Responsible for downloading the weather data from a government of Canada run public database from the weather stations that were filtered above. 
 
-unzipper.sh
-Description: bash file created to unzip large number of zipped files related to historic forest fire data. 
+### More Information on Methodology
 
+
+... Data was collected from the government of Canada's open data websites for both the Ministry of Environment and natural resources and Ministry of Forests and Forestry
+... Daily weather data was downloaded from 430 stations then aggregated into Monthly data to reduce the number of missing values. 
+... The data used was from all across Canada, between 1990 and 2022
+... This dataset is heavily relient on the assumption that the user understand Geographic data and Coordinate systems
+... Weather data and fire data were then merged based on distance. 
+... cKD trees were used to merge the two datasets together by distance. 
+... We collected the 5 closest stations to a fire to get a good average of the different temepratures that suround a fire.
+... More information can be found in the notebooks!
+
+
+
+#### Repository 
+
+* `data` 
+    - contains link to copy of the dataset (stored in a public Google Drive)
+
+* `model`
+    - Includes all 3 models that were created: Logistic Regression, Decision Tree, and Histogram Gradient Boosting. 
+
+* `notebooks`
+    - contains all final notebooks involved in the project
+
+* `docs`
+    - contains the presentations invloved with this project
+
+
+* `.gitignore`
+    - Part of Git, includes files and folders to be ignored by Git version control
+
+* `fire_prediction_model.yml`
+    - Conda environment for this project
+
+* `README.md`
+    - Project landing page (this page)
+
+* `LICENSE`
+    - Project license
+
+#### Dataset
+
+...Can be found under `Data` 
