@@ -18,7 +18,7 @@ Sari Sarieddine
     Anticipating forest fires may help communities be better equipped to handle the risks. 
 
 
-... Key takeaways: Histogram Gradient Boosting has proved to be the best model in predicting occurance of forest fires. Modelling for climate related events has a risk of model drifting in a shorter span than what may be ideal as we are seeing a rapid change in temperatures and weather events. We will have to contineously monitor, measure, and retrain our models to keep up with those changes. 
+... Key takeaways: The Decision Tree model and Random Forest models both provided a decent accuracy score, but looked at different aspects of our features - with the decision tree looking at 5 features while the random forest model looked at all the features. Modelling for climate related events has a risk of model drifting in a shorter span than what may be ideal as we are seeing a rapid change in temperatures and weather events. We will have to contineously monitor, measure, and retrain our models to keep up with those changes. 
 
 
 
